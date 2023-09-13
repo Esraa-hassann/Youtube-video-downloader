@@ -1,0 +1,49 @@
+<Doctype html!>
+<head>
+<body>
+  <title>YouTube Video Downloader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        form {
+            margin-top: 50px;
+        }
+
+        input[type="text"],
+        input[type="submit"],
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+             margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</body>
+<body>
+    <h1>YouTube Video Downloader</h1>
+
+    <form action="/" method="post">
+        <input type="text" name="url" placeholder="Enter video URL" required><br>
+        <select name="resolution" required>
+            <option value="360p">360p</option>
+            <option value="720p">720p</option>
+            <option value="1080p">1080p</option>
+        </select><br>
+        <input type="submit" value="Download">
+    </form>
+</head>
+</body>
+</Doctype>>
